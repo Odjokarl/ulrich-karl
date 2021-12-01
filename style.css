@@ -1,0 +1,259 @@
+html {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    background-image: -webkit-linear-gradient(#8639b1, #eb2133, #fd9e41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+h2 {
+    font-size: 1.5rem;
+    background-image: -webkit-linear-gradient(#8639b1, #eb2133, #fd9e41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+p {
+    color: rgba(37, 37, 37, 0.6);
+}
+
+/* Styling the nav bar */
+.topbar {
+    background-color: rgb(37, 37, 37);
+}
+
+.topbar-nav {
+    text-align: center;
+}
+
+.topbar-nav a {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 16px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.topbar-nav a:hover {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color .4s;
+}
+
+
+/* Styling Hero section */
+.hero-left p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hero-right img {
+    width: 200px;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    text-transform: uppercase;
+    text-align: center;
+    width: 11rem;
+    margin: 0.625rem auto;
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #FFF;
+}
+
+.button:hover {
+    background-image: -webkit-linear-gradient(left,rgb(219, 170, 6),rgb(204, 79, 57),rgb(132, 17, 177),rgb(41, 109, 235),rgb(144, 238, 144));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 5px 5px 5px #777;
+    transition: background-image .7s;
+    transition: box-shadow .5s;
+}
+
+.button a {
+    color: rgb(0, 0, 0);
+}
+
+/* Styling about section */
+.about {
+    text-align: center;
+}
+
+/* Styling career section */
+.career {
+    text-align: center;
+}
+
+.career h2 {
+    margin-top: 0;
+}
+
+.career-right, .career-left {
+    margin: 10px 0;
+}
+
+.info::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 90%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Styling footer */
+footer {
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    padding: 0.625rem 0;
+}
+
+footer p {
+    color: #fff;
+    margin: 0 0 0.625rem;
+}
+
+.social-icon a {
+    color: #fff;
+    padding: 0 0.375rem;
+}
+
+.social-icon a:hover {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color .4s;
+}
+
+
+/* Styling form */
+/* button, input, select, 
+textarea {
+  font-family: inherit;
+  font-size: 100%
+} */
+
+form ul { 
+    list-style-type: none;
+     margin: 0;
+     padding: 0;
+}
+
+ul li {
+	margin-bottom: 1em; 
+}
+
+form {
+	max-width: 30em;
+	/* border: 1px solid #666; */
+	/* border-radius: 10px; */
+	/* background-color:#f2f5d5; */
+	padding: 1em;
+    margin: 0 auto;
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+form li {
+    /* the label and input become flex items within each list item */
+    /* Wrapping is turned on so labels stack above inputs on narrow viewports */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+	/* labels are fixed at 8ems wide with a little margin to keep them 
+	from bumbing into other elements */
+	flex: 0 0 8em;
+	margin-right: 1em;
+	margin-bottom: 4px;
+	color: rgb(37, 37, 37);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+input, textarea {
+	/* form inputs and fieldsets are fully flexible to fill the available width */
+	flex: 1 1 20em;
+    border-radius: 5px;
+}
+
+input.text-field {
+	height: 2em;
+	border: 1px solid rgba(0,0,0,.3);
+	padding-left: 6px;
+	font-family: inherit;
+	font-size: .875em;
+}
+
+textarea {
+	display: block;
+	height: 5em;
+	border: 1px solid rgba(0,0,0,.3);
+	padding-left: 6px;
+	font-family: inherit; 
+	font-size: .875em;
+	line-height: 1.25;
+	overflow: auto;
+	resize: none;
+}
+
+input[type="submit"] {
+	/* I've changed the style of the button and set its side margins to "auto" so it is 
+	always centered in the width of the form */
+	width: 10em;
+	height: 2em;
+    background-color: #6057c3; /* #6057c3 */
+	border: 2px solid #6057c3;
+	border-radius: 5px;
+	font-size: inherit;
+	flex: 0 1 4em;
+	margin: 0 0 0 auto;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 5px 5px 5px #777;
+    transition: box-shadow .5s;
+}
+
+
+/* Screen CSS */
+/* Apply on desktop screen */
+@media only screen and (min-width: 644px) {
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+        padding: 0 25px;
+    }
+
+    .topbar-nav a {
+        padding: 0;
+        margin: 0 20px;
+    }
+}
